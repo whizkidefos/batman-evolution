@@ -1,0 +1,637 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+img {
+  max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+/* GENERICS */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.wrapper{
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*========== HEADER && NAVIGATION========*/
+header {
+  background: transparent;
+  width: 100%;
+  position: relative;
+}
+
+header.sticky-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  z-index: 6;
+}
+body.scroll header.sticky-header{
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.nav-wrapper{
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav.nav-wrapper ul li{
+  display: inline-block;
+  padding: 0 7px;
+  margin-bottom: 0;
+}
+nav.nav-wrapper ul li a{
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav-wrapper ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+header .logo img{
+  max-width: 100px;
+  height: auto;
+}
+
+/*================ PARALLAX ============*/
+.cover-main {
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../images/batman-bg.jpg') right bottom;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#scene {
+  margin-top: 60px;
+}
+#scene li.name{
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+}
+#scene li.title{
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: 65px;
+}
+
+.btn{
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+}
+.work-btn,
+.contact-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  margin: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.work-btn:hover,
+.contact-btn:hover {
+  background-color: white;
+  color: #000;
+}
+ /*=================== GALLERY =====================*/
+.masonry-grid {
+  position: relative;
+}
+.grid {
+  margin: 0 auto;
+}
+.grid-item {
+  width: 450px;
+}
+.tall-image {
+  height: 680px;
+}
+
+h2.sub-title {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 70px auto;
+  display: block;
+}
+h2.sub-title::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #000;
+  width: 85px;
+  margin: 20px auto 0 auto;
+}
+ /*=================== ABOUT & BEATING HEART ==========*/
+ section.beating-heart {
+   background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../images/batman-bg.jpg') right bottom;
+   height: 100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   text-align: center;
+   color: white;
+   padding: 50px 30px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -ms-flex-item-align: center;
+       align-self: center;
+ }
+ section.beating-heart h2::after {
+   background: white;
+ }
+    section.beating-heart span {
+      font-size: 100px;
+      line-height: 105px;
+    }
+ .heart {
+   width: 100px;
+   position: relative;
+   margin: 0 50px;
+   -webkit-animation: pulse 2s infinite;
+           animation: pulse 2s infinite;
+ }
+
+ @-webkit-keyframes pulse {
+   0% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+   }
+   45% {
+     -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+   }
+   75% {
+     -webkit-transform: scale(1.2);
+             transform: scale(1.2);
+   }
+   100% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+   }
+ }
+
+ @keyframes pulse {
+   0% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+   }
+   45% {
+     -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+   }
+   75% {
+     -webkit-transform: scale(1.2);
+             transform: scale(1.2);
+   }
+   100% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+   }
+ }
+
+ /*================= SLIDER ================*/
+ .slider {
+   margin: 20px auto;
+   padding: 20px;
+   color: white;
+   text-align: center;
+ }
+ .slide {
+   max-height: 300px;
+   padding: 15px;
+ }
+ .slick-prev,
+ .slick-next {
+   background: #000;
+   width: 40px;
+   height: 40px;
+   z-index: 1;
+ }
+ .slick-prev:hover,
+ .slick-next:hover {
+   background: #000;
+ }
+ .slick-prev {
+   left: 0;
+ }
+ .slick-next {
+   right: 0;
+ }
+
+ /*================ CONTACT ===============*/
+ footer {
+   position: relative;
+   z-index: -2;
+   background: #000;
+   color: white;
+   text-align: center;
+   height: 150px;
+ }
+ footer h3 {
+   position: fixed;
+   bottom: 50px;
+   text-align: center;
+   left: 50%;
+   -webkit-transform: translate(-50%);
+           transform: translate(-50%);
+   z-index: 1;
+ }
+
+/*========== RESPONSIVE STYLES ===========*/
+@media only screen and (max-width: 1160px) {
+  section.beating-heart span {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .heart {
+    width: 50px;
+    margin: 0 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .cover-main {
+    height: 100vh;
+  }
+
+  header .logo img {
+    margin-left: 15px;
+}
+  .menu-trigger {
+    background: url('../images/hamburger-icon.svg') no-repeat center / cover;
+    width: 35px;
+    height: 35px;
+    display: block;
+    z-index: 10;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    cursor: pointer;
+  }
+  .main-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 6;
+    display: none;
+  }
+  .main-overlay::after {
+    background: url('../images/close-icon.svg') no-repeat center / cover;
+    width: 35px;
+    height: 35px;
+    display: block;
+    content: "";
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    z-index: 20;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    width: 100%;
+    max-width: 300px;
+    z-index: 20;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  nav.nav-wrapper ul li {
+    display: block;
+    margin: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  body.menu-active .menu{
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    display: block;
+    padding: 0 15px;
+  }
+  body.menu-active .main-overlay{
+    display: block;
+  }
+  body.menu-active .menu-trigger{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .wrapper {
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  ul#scene li.name {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  ul#scene li.title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 40px;
+    display: table;
+    text-align: center;
+  }
+
+  div.grid {
+      width: initial !important;
+  }
+
+  .btn {
+    margin-top: 80px;
+  }
+
+  ul#scene {
+    margin-top: 50px;
+  }
+
+  .portfolio-btn,
+  .contact-btn {
+    display: block;
+    margin: 20px auto;
+    max-width: 120px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 0;
+  }
+
+  h2.sub-title {
+    margin: 30px auto;
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  section.beating-heart {
+    height: initial;
+  }
+  section.beating-heart p{
+    font-size: 14px;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  footer h1 {
+    font-size: 12px;
+    line-height: 20px;
+    bottom: 40px;
+  }
+
+  .grid-item {
+      width: initial;
+  }
+
+  .tall-img {
+    height: initial;
+  }
+
+  .menu {
+    max-width: 200px;
+  }
+
+}

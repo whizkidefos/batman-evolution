@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<meta property="og:title" content="" />-->
+    <!--<meta property="og:url" content="" />-->
+    <!--<meta property="og:image" content="" />-->
+    <!--<meta property="og:site_name" content="" />-->
+    <!--<meta property="og:description" content="" />-->
+    <title>Batman | The Evolution</title>
+    <link rel="shortcut icon" type="image/png" href="images/batman.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+            <script src="scripts/html5shiv.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+  <div class="main-overlay js-main-overlay"></div>
+  <section id="home" class="cover-main">
+    <header>
+      <nav class="nav-wrapper">
+        <div class="logo">
+          <a href="index.html"><img src="images/batman.svg" alt="" class="logo-image"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">The Story</a></li>
+          <li><a href="#slideshow">SlideShow</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
+      <div class="menu-trigger js-menu-trigger"></div>
+    </header>
+
+    <div class="wrapper">
+      <ul id="scene"
+        data-invert-x="false"
+        data-invert-y="false"
+        data-scalar-x="7"
+        data-scalar-y="7"
+        data-friction-x="0.1"
+        data-friction-y="0.1"
+        data-origin-x="0.5"
+        data-origin-y="0.5">
+        <li class="layer name" data-depth="0.90">The Evolution of batman</li>
+        <li class="layer title" data-depth="0.50">Batman Begins ... Justice League</li>
+        <li class="layer btn btn-main" data-depth="0.30">
+          <a href="#" class="work-btn">Voglio Provarci</a>
+          <a href="#" class="contact-btn">Saperne di più</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery" class="masonry-grid">
+    <div class="wrapper"></div>
+    <h2 class="sub-title">Photos from Various Scenes</h2>
+    <div class="grid">
+      <div class="grid-item"><img src="images/batman-1.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/batman-2.jpg" alt=""></div>
+      <div class="grid-item tall-image"><img src="images/batman-4.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/batman-3.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/batman-5.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/batman-6.jpg" alt=""></div>
+      <div class="grid-item tall-image"><img src="images/batman-tall.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/batman-7.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/batman-8.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/bbaffleck.jpg" alt=""></div>
+      <div class="grid-item"><img src="images/share.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <section id="about" class="beating-heart">
+    <div class="wrapper">
+      <h2 class="sub-title">The Story So Far...</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum iste sint, sit amet voluptas minus deleniti laudantium, commodi temporibus doloribus at aut, eius placeat. Officia velit incidunt quis eum inventore dolor porro perspiciatis sint, maiores cupiditate eius quam ratione, quibusdam, placeat nemo repudiandae eos laboriosam voluptatum nam! Ducimus, harum, obcaecati.</p>
+      <span>I</span>
+        <img src="images/heart-yellow.svg" alt="Beating Heart" class="heart">
+      <span>Batman!</span>
+    </div>
+  </section>
+
+  <section id="slideshow" class="work-showcase">
+    <h2 class="sub-title">Timeline Showcase</h2>
+    <div class="slider">
+      <div class="slide">
+        <img src="images/slide1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide2.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide3.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide4.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide5.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide6.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide7.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="slide">
+        <img src="images/slide8.jpg" alt="" class="img-responsive">
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="wrapper">
+      <h3>Batman is dope! Copyright &copy; 2018 - Certain rights reserved.</h3>
+    </div>
+  </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/masonry.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>
